@@ -41,10 +41,10 @@ const Pod = () => {
 
     const movePod = () => {
       const { x, y } = position;
-      const podWidth = podElement.offsetWidth;
-      const podHeight = podElement.offsetHeight;
-      const offsetX = (x- window.innerWidth / 2 ) / 10;
-      const offsetY = (y-window.innerHeight / 2) / 10;
+      // const podWidth = podElement.offsetWidth;
+      // const podHeight = podElement.offsetHeight;
+      const offsetX = (x- window.innerWidth / 2 ) / 20;
+      const offsetY = (y-window.innerHeight / 2) / 20;
 
       if (isMouseOnScreen) {
         podElement.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
@@ -58,7 +58,7 @@ const Pod = () => {
     return () => {
       podElement.style.transform = 'none';
     };
-  }, [position]);
+  }, [position, isMouseOnScreen]);
 
 
   return <Box ref={podRef}>AYO</Box>;
