@@ -13,9 +13,9 @@ const Main = () =>{
 
 const Container = styled.div`
 height: 100vh;
-background: linear-gradient(109.6deg, rgb(72, 200, 160) 11.2%, rgb(32, 40, 48) 91.3%);
 display: flex;
 align-items: center;
-justify-content: center;
+position: relative;
+
 `
 export default Main

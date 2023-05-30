@@ -1,5 +1,6 @@
 import  styled  from "styled-components";
 import { useEffect, useState, useRef } from "react";
+import ProfileImage from "./Images/pdp.PNG"
 
 const Pod = () => {
   const podRef = useRef(null);
@@ -61,20 +62,25 @@ const Pod = () => {
   }, [position, isMouseOnScreen]);
 
 
-  return <Box ref={podRef}>AYO</Box>;
+  return <Box ref={podRef}></Box>;
 };
 
 const Box = styled.div`
-  height: 200px;
-  width: 200px;
-  background-color: white;
-  border-radius: 30px;
+  height: 300px;
+  width: 300px;
+  background-image:url(${ProfileImage}) ;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
   font-weight: bold;
   font-size: 2em;
+  position: absolute;
+  top: 200px;
+  right: 500px;
 `;
 
 export default Pod;
