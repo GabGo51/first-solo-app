@@ -9,8 +9,8 @@ import {linkedinSquare} from 'react-icons-kit/fa/linkedinSquare'
 const Links = () =>{
 return(
 <Container>
-  <Link href="https://www.linkedin.com/in/gabriel-gosselin-802bb5247/"> <Icon size={42} icon={linkedinSquare}/></Link>
-  <Link href="https://github.com/GabGo51"><Icon size={42} icon={githubSquare}/></Link>
+  <Link target="_blank" href="https://www.linkedin.com/in/gabriel-gosselin-802bb5247/"> <Icon size={42} icon={linkedinSquare}/></Link>
+  <Link target="_blank" href="https://github.com/GabGo51"><Icon size={42} icon={githubSquare}/></Link>
 </Container>
 )
 
