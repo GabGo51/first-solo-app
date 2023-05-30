@@ -17,6 +17,8 @@ return(
 }
 
 const Container = styled.div`
+position: absolute;
+bottom: 250px;
 `
 
 const Link = styled.a`

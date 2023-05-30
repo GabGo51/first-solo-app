@@ -36,7 +36,6 @@ const Description = styled.p`
 position: relative;
 z-index: 2;
 margin-top: 40px;
-margin-left: 10px;
 font-size: 1.5em;
 width: 500px;
 line-height: 40px;

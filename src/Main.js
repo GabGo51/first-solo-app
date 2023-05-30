@@ -11,9 +11,10 @@ const Main = () =>{
         <Top>
             <Intro/>
             <Pod/>
+            <Links/>
+            <TechStack/>
         </Top>
-        <Links/>
-        <TechStack/>
+        
         
     </Container>
  )
@@ -23,6 +24,7 @@ const Main = () =>{
 const Container = styled.div`
 height: 100vh;
 display: flex;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 position: relative;
@@ -33,6 +35,7 @@ const Top = styled.div`
 position: absolute;
 top: 200px;
 width: 800px;
+height: 500px;
 
 `
 export default Main
