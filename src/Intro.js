@@ -15,7 +15,6 @@ return(
 
 const IntroBox = styled.div`
 position: absolute;
-right: ;
 z-index: 2;
 `
 const Image = styled.img`

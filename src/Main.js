@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import Pod from './Pod'
 import Intro from './Intro'
+import TechStack from './TechStack'
+import Links from './Links'
 import { useEffect, useState, useRef } from 'react'
 
 const Main = () =>{
@@ -10,6 +12,8 @@ const Main = () =>{
             <Intro/>
             <Pod/>
         </Top>
+        <Links/>
+        <TechStack/>
         
     </Container>
  )
