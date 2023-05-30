@@ -26,7 +26,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
-
+margin-top: 100px;
 `
 
 const Top = styled.div`
