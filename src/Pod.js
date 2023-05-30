@@ -79,8 +79,7 @@ const Box = styled.div`
   font-weight: bold;
   font-size: 2em;
   position: absolute;
-  top: 200px;
-  right: 500px;
+  right: -100px;
 `;
 
 export default Pod;

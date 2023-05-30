@@ -63,7 +63,7 @@ export default createGlobalStyle`
 
   body {
     line-height: 1.25;
-    background: #222;
+    background: linear-gradient(109.6deg, rgb(32, 80, 64) 0.2%, rgb(0, 0, 0) 50.3%);
     color: white;
   }
 
