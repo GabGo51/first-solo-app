@@ -27,10 +27,11 @@ const AboutMe = () => {
 
 const Container = styled.div`
   margin-top: 800px;
-  width: 600px;
+  width: 700px;
   padding-bottom: 200px;
   display: flex;
   position: relative;
+  margin-bottom: 60px;
 `;
 
 const Image = styled.img`
@@ -38,8 +39,9 @@ const Image = styled.img`
   height: 600px;
   border-radius: 20px;
   object-fit: cover;
-  margin-left: -250px;
-  margin-right: 100px;
+  margin-left: -200px;
+  margin-right: 200px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 const rotate360 = keyframes`
@@ -62,17 +64,19 @@ const rotate360 = keyframes`
 
 const Circle = styled(Icon)`
   position: absolute;
-  bottom: 90px;
-  margin-left: 95px;
+  bottom: 120px;
+  margin-left: 140px;
   animation: ${rotate360} 2s linear infinite;
   color: white;
   opacity: 0.8;
+  
 `;
 
 const TextBox = styled.div``;
 
 const Title = styled.h2`
-  text-decoration: underline;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
   margin-bottom: 40px;
 `;
 
