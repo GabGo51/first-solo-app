@@ -22,6 +22,7 @@ const ProjectBox3 = () =>{
 
 const Container = styled.div`
 display: flex;
+
 `
 const Image = styled.img`
 width: 580px;
@@ -37,8 +38,9 @@ filter: brightness(95%);
 `
 const TextBox = styled.div`
 margin-right: 100px;
-margin-left: 80px;
+margin-left: 40px;
 line-height: 30px;
+width: 350px;
 `
 const Title = styled.h3`
 font-size: 1.5em;

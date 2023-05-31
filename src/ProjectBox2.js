@@ -6,7 +6,7 @@ const ProjectBox2 = () => {
       <Image src={Fruit} />
       <TextBox>
         <Title>Fruit Store</Title>
-        <Text>Creation of a Fruit Store Website using React. Making usage of a database to create reusable components</Text>
+        <Text>Creation of a Fruit Store Website using React. Learning how to pass down props and making usage of a database to create reusable components. Styling the items depending on their status and availability.</Text>
       </TextBox>
     </Container>
   );

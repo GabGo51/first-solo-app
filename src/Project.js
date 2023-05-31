@@ -33,6 +33,9 @@ margin-left: -200px;
 const Title = styled.h2`
 font-size: 1.9em;
 margin-bottom: 200px;
+border: 1px solid white;
+padding: 10px 20px;
+border-radius: 5px;
 `
 
 
