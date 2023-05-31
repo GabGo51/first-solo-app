@@ -26,7 +26,7 @@ const AboutMe = () => {
 };
 
 const Container = styled.div`
-  margin-top: 800px;
+  margin-top: 1000px;
   width: 700px;
   padding-bottom: 200px;
   display: flex;

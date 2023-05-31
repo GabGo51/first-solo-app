@@ -13,11 +13,11 @@ const Header = () =>{
     } 
     if (buttonText === "About") {
       // Scroll to the top of the page
-      window.scrollTo({ top: 800, behavior: "smooth" });
+      window.scrollTo({ top: 1000, behavior: "smooth" });
     } 
     if (buttonText === "Project") {
       // Scroll to the top of the page
-      window.scrollTo({ top: 1750, behavior: "smooth" });
+      window.scrollTo({ top: 2000, behavior: "smooth" });
     } 
     if (buttonText === "Contact") {
       // Scroll to the top of the page
