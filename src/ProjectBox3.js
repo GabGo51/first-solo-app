@@ -1,16 +1,19 @@
 import styled  from "styled-components"
+import Cookie from "./Images/Cookie.PNG"
 
 const ProjectBox3 = () =>{
  return(
 
   <Container>
-    <Image/>
+    
     <TextBox>
         <Title>Coockie Clicker</Title>
         <Text>
-          yolahbgl;ajkgb;akjg;akjgvlkGValhzjvlhjvglzhl
+          A React idle Game that made use of Hooks to update the states and effects of the game components. Also made use of keyboard event listener so the player could use space bar to generate cookies.
         </Text>
-      </TextBox>
+    </TextBox>
+
+    <Image src={Cookie}/>
 
   </Container>
  )
@@ -18,13 +21,24 @@ const ProjectBox3 = () =>{
 }
 
 const Container = styled.div`
-
+display: flex;
 `
 const Image = styled.img`
+width: 580px;
+border-radius: 30px;
+filter: brightness(95%);
+  transition: 200ms;
+
+  &:hover{
+    filter: brightness(105%);
+    scale: 1.05;
+  }
 
 `
 const TextBox = styled.div`
-
+margin-right: 100px;
+margin-left: 80px;
+line-height: 30px;
 `
 const Title = styled.h3`
 font-size: 1.5em;
