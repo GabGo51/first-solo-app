@@ -3,7 +3,8 @@ import Pod from './Pod'
 import Intro from './Intro'
 import TechStack from './TechStack'
 import Links from './Links'
-import { useEffect, useState, useRef } from 'react'
+import AboutMe from './AboutMe'
+
 
 const Main = () =>{
  return (
@@ -14,6 +15,7 @@ const Main = () =>{
             <Links/>
             <TechStack/>
         </Top>
+        <AboutMe/>
         
         
     </Container>
@@ -22,7 +24,7 @@ const Main = () =>{
 
 
 const Container = styled.div`
-height: 100vh;
+/* height: 100vh; */
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -35,7 +37,6 @@ const Top = styled.div`
 position: absolute;
 top: 200px;
 margin-left: -150px;
-
 width: 800px;
 height: 500px;
 
