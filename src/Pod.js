@@ -1,6 +1,6 @@
 import  styled  from "styled-components";
 import { useEffect, useState, useRef } from "react";
-import ProfileImage from "./Images/pdp.PNG"
+import ProfileImage from "./Images/face.jpg"
 
 const Pod = () => {
   const podRef = useRef(null);

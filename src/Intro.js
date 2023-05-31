@@ -1,12 +1,16 @@
 import  styled  from "styled-components"
 import Compute from "./Images/compute2.png"
+import Icon from "react-icons-kit"
+import {location} from 'react-icons-kit/icomoon/location'
+
+
 const Intro = () =>{
 
 return(
   <IntroBox>
     <Title>React Web Developper</Title>
     <Image src={Compute}/>
-    <Description>Hi, I'm Gabriel Gosselin. A pasionate React Web Developper based in Montreal, Canada.</Description>
+    <Description>Hi, I'm Gabriel Gosselin. A pasionate React Web Developper based in Montreal, Canada <Icon icon={location} size={26} style={{ color: "#B75D5D" }}/></Description>
   </IntroBox>
   
   
@@ -22,7 +26,6 @@ position: absolute;
 top: -60px;
 left: -60px;
 z-index: 1;
-
 `
 
 const Title = styled.h1`

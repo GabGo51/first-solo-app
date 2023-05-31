@@ -34,6 +34,8 @@ margin-top: 100px;
 const Top = styled.div`
 position: absolute;
 top: 200px;
+margin-left: -150px;
+
 width: 800px;
 height: 500px;
 
