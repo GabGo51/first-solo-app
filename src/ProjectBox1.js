@@ -29,17 +29,19 @@ const Image = styled.img`
   
   border-radius: 30px;
   margin-top: -100px;
+  margin-right: -30px;
   filter: brightness(85%);
   transition: 200ms;
 
   &:hover{
     filter: brightness(100%);
     scale: 1.05;
+    cursor: pointer;
   }
 `;
 const TextBox = styled.div`
   width: 400px;
-  margin-right: 200px;
+  margin-right: 250px;
 `;
 const Title = styled.h3`
   font-size: 1.5em;

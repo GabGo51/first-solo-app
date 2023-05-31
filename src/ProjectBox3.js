@@ -33,6 +33,7 @@ filter: brightness(95%);
   &:hover{
     filter: brightness(105%);
     scale: 1.05;
+    cursor: pointer;
   }
 
 `

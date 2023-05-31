@@ -28,10 +28,12 @@ const Image = styled.img`
   &:hover{
     filter: brightness(105%);
     scale: 1.05;
+    cursor: pointer;
   }
 `;
 const TextBox = styled.div`
 width: 400px;
+
 `;
 const Title = styled.h3`
   font-size: 1.5em;
