@@ -66,11 +66,15 @@ export default createGlobalStyle`
   body {
     line-height: 1.25;
     background:#151515 ;
+    
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     color: white;
+    
   }
+
+  
 
   a {
     color: #69ffcf;

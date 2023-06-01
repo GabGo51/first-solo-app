@@ -26,6 +26,8 @@ position: absolute;
 top: -60px;
 left: -60px;
 z-index: 1;
+filter: invert(40%);
+filter: contrast(50%);
 `
 
 const Title = styled.h1`
