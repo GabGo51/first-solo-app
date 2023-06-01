@@ -6,10 +6,12 @@ import Links from "./Links";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
 import ContactMe from "./ContactMe";
+import LightMode from "./LightMode";
 
 const Main = () => {
   return (
     <Container>
+      <LightMode/>
       <Top>
         <Intro />
         <Pod />

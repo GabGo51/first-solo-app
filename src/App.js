@@ -9,19 +9,17 @@ function App() {
   return (
     <>
       <GlobalStyles/>
-      <Box>
-        <Header/>
-        <Main/>
-      </Box>
+      
+      <Header/>
+      <Main/>
+      
       
     </>
     
   );
 }
 
-const Box = styled.div`
 
-`
 
 
 export default App;
