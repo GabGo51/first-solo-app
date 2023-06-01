@@ -1,7 +1,28 @@
 import  styled  from "styled-components"
+import { useEffect, useState } from "react"
 
 const ContactMe = () => {
 
+  const [formData, setFormData] = useState({
+    name:'', 
+    email:'',
+    message:''
+  })
+
+  const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+    });
+  };
+
+
+  const handleSubmit = (event) =>{
+
+    event.preventDefault();
+
+    window.alert("YOOOOOOOOOOO")
+  }
 
 return(
 
@@ -10,19 +31,35 @@ return(
     <InfoBox>
       <TextBox>
         <h3>Get in touch</h3>
-        <p>Email: snow.gabo51@gmail.com</p>
-        <p>Phone: 450 712 7842</p>
+        <p><span>Email</span> : snow.gabo51@gmail.com</p>
+        <p><span>Phone</span> : 450 712 7842</p>
         <p>sum dummy text</p>
       </TextBox>
       <FormBox>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div>
-            <Input placeholder="Name"/>
-            <Input placeholder="Email"/>
+            <Input 
+            name="name"
+            onChange={handleChange} 
+            placeholder="Name"
+            value={formData.name}
+            />
+            <Input 
+            type="email"
+            name="email"
+            onChange={handleChange} 
+            placeholder="Email"
+            value={formData.email}
+            />
           </div>
           
-          <Message placeholder="Message"/>
-          <button>Send</button>
+          <Message 
+          name="message"
+          placeholder="Message"
+          onChange={handleChange}
+          value={formData.message}
+          />
+          <button type="submit">Send</button>
         </form>
       </FormBox>
     </InfoBox>
@@ -32,10 +69,11 @@ return(
 }
 
 const Container = styled.div`
-width: 1000px;
+width: 1200px;
 padding-bottom: 1000px;
 display: flex;
 flex-direction: column;
+color: white;
 
 `
 const Title = styled.h2`
@@ -51,6 +89,15 @@ display: flex;
 `
 const TextBox = styled.div`
 margin-right: 150px;
+font-size: 1.3em;
+
+p{
+  margin-top: 40px;
+}
+
+span{
+  font-weight: bold;
+}
 `
 const FormBox = styled.div`
 
@@ -63,12 +110,15 @@ form{
 button{
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 50px;
-  border: 1px solid white;
+  border: 1px solid #B3B3B3;
   background-color: black;
   padding: 5px 40px;
   transition: 200ms;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #B3B3B3   ;
 
   &:hover{
     background-color: white;
@@ -80,15 +130,30 @@ button{
 const Input = styled.input`
 width: 290px;
 margin-right: 20px;
-border: 1px solid white;
+border: 1px solid #B3B3B3;
 background-color: black;
-
+padding: 10px ;
+font-size: 1.1em;
+transition: 200ms;
+color: white;
+&:hover{
+    border: 1px solid white;
+  }
 `
 
 const Message = styled.input`
-height: 100px;
+padding: 10px;
+padding-bottom: 150px;
 width: 600px;
-border: 1px solid white;
+border: 1px solid #B3B3B3;
 background-color: black;
+font-size: 1.1em;
+transition: 200ms;
+vertical-align: top;
+color: white;
+&:hover{
+    border: 1px solid white;
+  }
+
 `
 export default ContactMe
