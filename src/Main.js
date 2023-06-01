@@ -5,6 +5,7 @@ import TechStack from "./TechStack";
 import Links from "./Links";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
+import ContactMe from "./ContactMe";
 
 const Main = () => {
   return (
@@ -17,6 +18,7 @@ const Main = () => {
       </Top>
       <AboutMe />
       <Project />
+      <ContactMe/>
     </Container>
   );
 };

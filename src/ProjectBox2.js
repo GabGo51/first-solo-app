@@ -15,7 +15,7 @@ const ProjectBox2 = () => {
 const Container = styled.div`
   display: flex;
   margin-left: -60px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 `;
 const Image = styled.img`
   border-radius: 30px;

@@ -21,14 +21,14 @@ const ProjectBox1 = () => {
 
 const Container = styled.div`
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   flex-wrap: wrap;
 `;
 const Image = styled.img`
   width: 400px;
   
   border-radius: 30px;
-  margin-top: -100px;
+  /* margin-top: -100px; */
   margin-right: -30px;
   filter: brightness(85%);
   transition: 200ms;

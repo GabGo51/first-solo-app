@@ -27,7 +27,7 @@ const AboutMe = () => {
 
 const Container = styled.div`
   margin-top: 1000px;
-  width: 700px;
+  width: 800px;
   padding-bottom: 200px;
   display: flex;
   position: relative;
@@ -72,7 +72,9 @@ const Circle = styled(Icon)`
   
 `;
 
-const TextBox = styled.div``;
+const TextBox = styled.div`
+
+`;
 
 const Title = styled.h2`
   border-bottom: 1px solid white;

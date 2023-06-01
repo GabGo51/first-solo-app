@@ -25,9 +25,9 @@ justify-content: center;
 align-items: center;
 position: relative;
 width: 1200px;
-padding-bottom: 1000px;
+padding-bottom: 200px;
 margin-left: -200px;
-margin-top: 60px;
+margin-top: 90px;
 
 `
 

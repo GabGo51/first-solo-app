@@ -11,11 +11,15 @@ const TechStack = () =>{
   return(
   <Container>
     <Title>TechStack</Title>
-    <Icon icon={code} size={36}/>
+    <i class="fa-solid fa-code"></i>
     <IconContainer>
-      <Icon icon={htmlFive} size={32} style={{ marginRight: '40px' }}/>
-      <Icon icon={css3} size={32} style={{ marginRight: '40px' }} />
-      <Icon icon={git} size={32} style={{ marginRight: '40px' }}/>
+      <i class="fa-brands fa-html5" ></i>
+      <i class="fa-brands fa-css3" ></i>
+      <i class="fa-brands fa-js" ></i>
+      <i class="fa-brands fa-react" ></i>
+      <i class="fa-brands fa-git-alt" ></i>
+      <i class="fa-brands fa-node-js"></i>
+      
       
     </IconContainer>
   </Container>
@@ -26,19 +30,36 @@ const TechStack = () =>{
 const Container = styled.div`
 position: absolute;
 display: flex;
+justify-content: center;
 align-items: center;
 bottom: 100px;
+
+i{
+  margin-right: 60px;
+  scale: 2;
+}
 `
 
 const Title = styled.p`
-font-size: 1.3em;
+font-size: 1.5em;
 margin-right: 40px;
 font-weight: 500;
+margin-top: -7px;
 `
 
 const IconContainer = styled.div`
 display: flex;
 justify-content: space-between;
+align-items: center;
+justify-content: center;
 margin-left: 40px;
+
+i{
+  
+}
+`
+
+const Icon2 = styled.i`
+size: 40px;
 `
 export default TechStack
