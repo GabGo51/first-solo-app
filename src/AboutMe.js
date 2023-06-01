@@ -11,14 +11,9 @@ const AboutMe = () => {
       <TextBox>
         <Title>ABOUT ME</Title>
         <Text>
-          The sun was shining brightly as I walked through the bustling city
-          streets. People hurried past me, their footsteps echoing against the
-          pavement. I marveled at the diversity of the crowd, each person with
-          their own story and destination. I decided to take a detour and
-          explore a nearby park. The air was filled with the sweet scent of
-          blooming flowers, and the sound of birds chirping provided a soothing
-          melody. I found a peaceful spot under a tall oak tree and sat down,
-          closing my eyes to soak in the tranquility.
+        Hi! I'm Gab, a web developer with a passion for snowboard, rock climbing and gaming/anime. When I'm not geeking online, you'll find me outside either climbing up the mountains or snowboarding down them. As a web developer, I'm fascinated by the intersection of technology and creativity. I've honed my skills in HTML, CSS, JavaScript, and React to build visually stunning and responsive websites. I strive to create seamless user experiences that captivate and engage visitors.
+
+So, take a moment to explore my portfolio and discover some of the projects I've brought to life. If you have any questions or if you'd like to discuss a potential project, feel free to reach out. Let's collaborate and create something amazing together!
         </Text>
       </TextBox>
     </Container>

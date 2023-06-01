@@ -33,7 +33,7 @@ return(
         <h3>Get in touch</h3>
         <p><span>Email</span> : snow.gabo51@gmail.com</p>
         <p><span>Phone</span> : 450 712 7842</p>
-        <p>sum dummy text</p>
+        <p>Thanks for checking out my portfolio! If you're interested in collaborating on a project, I'd love to hear from you. Feel free to reach out through the contact information provided. Looking forward to the opportunity to work together!</p>
       </TextBox>
       <FormBox>
         <form onSubmit={handleSubmit}>
@@ -86,6 +86,7 @@ const InfoBox = styled.div`
 display: flex;
 
 
+
 `
 const TextBox = styled.div`
 margin-right: 150px;
@@ -96,15 +97,22 @@ p{
 }
 
 span{
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: #69ffcf;
 }
 `
 const FormBox = styled.div`
-
+margin-left: -80px;
+margin-top: 20px;
 form{
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+div{
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 button{
@@ -121,8 +129,9 @@ button{
   color: #B3B3B3   ;
 
   &:hover{
-    background-color: white;
+    background-color: #69ffcf;
     color: black;
+    border: 1px solid black;
   }
 }
 `
@@ -151,6 +160,7 @@ font-size: 1.1em;
 transition: 200ms;
 vertical-align: top;
 color: white;
+margin: 5px 0px;
 &:hover{
     border: 1px solid white;
   }

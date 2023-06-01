@@ -63,16 +63,35 @@ top: 0;
 left: 0;
 right: 0;
 z-index: 20;
+
+@media screen and (max-width: 1700px) {
+  align-items: flex-start;
+}
+
 `
 
 const Title = styled.p`
 font-size: 1.3em;
 font-weight: bold;
 margin: 30px;
+
+@media screen and (max-width: 1500px) {
+  opacity: 0;
+}
+
 `
 
 const ButtonContainer = styled.div`
 margin: 40px;
+
+@media screen and (max-width: 1700px) {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  
+}
+
+
 `
 
 const Button = styled.button`
@@ -89,6 +108,10 @@ transition: 200ms;
 &:hover{
 
   scale: 1.15;
+}
+
+@media screen and (max-width: 1700px) {
+  margin-bottom: 40px;
 }
 
 

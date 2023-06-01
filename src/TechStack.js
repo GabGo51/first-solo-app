@@ -11,7 +11,7 @@ const TechStack = () =>{
   return(
   <Container>
     <Title>TechStack</Title>
-    <i class="fa-solid fa-code"></i>
+    <i class="fa-solid fa-code "></i>
     <IconContainer>
       <i class="fa-brands fa-html5" ></i>
       <i class="fa-brands fa-css3" ></i>
