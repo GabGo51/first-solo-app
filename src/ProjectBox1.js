@@ -23,9 +23,11 @@ const Container = styled.div`
   display: flex;
   margin-bottom: 200px;
   flex-wrap: wrap;
+  
 `;
 const Image = styled.img`
   width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
   border-radius: 30px;
   /* margin-top: -100px; */

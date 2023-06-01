@@ -1,7 +1,11 @@
 import  styled  from "styled-components"
 import { useEffect, useState } from "react"
+import { useContext } from "react"
+import { ThemeContext } from "./Context"
 
 const ContactMe = () => {
+
+  const {light} = useContext(ThemeContext)
 
   const [formData, setFormData] = useState({
     name:'', 
@@ -35,7 +39,7 @@ return(
         <p><span>Phone</span> : 450 712 7842</p>
         <p>Thanks for checking out my portfolio! If you're interested in collaborating on a project, I'd love to hear from you. Feel free to reach out through the contact information provided. Looking forward to the opportunity to work together!</p>
       </TextBox>
-      <FormBox>
+      <FormBox light = {light}>
         <form onSubmit={handleSubmit}>
           <div>
             <Input 
@@ -70,7 +74,7 @@ return(
 
 const Container = styled.div`
 width: 1200px;
-padding-bottom: 1000px;
+padding-bottom: 200px;
 display: flex;
 flex-direction: column;
 color: white;
@@ -126,7 +130,7 @@ button{
   transition: 200ms;
   font-size: 1.1em;
   font-weight: 500;
-  color: #B3B3B3   ;
+  color:${({light}) => light?"black":"white"}   ;
 
   &:hover{
     background-color: #69ffcf;

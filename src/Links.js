@@ -7,8 +7,9 @@ import {linkedinSquare} from 'react-icons-kit/fa/linkedinSquare'
 
 
 const Links = () =>{
+  
 return(
-<Container>
+<Container >
   <Link target="_blank" href="https://www.linkedin.com/in/gabriel-gosselin-802bb5247/"> <Icons size={42} icon={linkedinSquare}/></Link>
   <Link target="_blank" href="https://github.com/GabGo51"><Icons size={42} icon={githubSquare}/></Link>
 </Container>

@@ -4,19 +4,20 @@ import Header from "./Header";
 import  styled  from "styled-components";
 import LightMode from "./LightMode";
 import { useState } from "react";
+import { useContext } from "react";
+import { ThemeContext} from "./Context";
 
 
 function App() {
 
-  const [light, setlight] = useState(false)
-  
+  const {light} = useContext(ThemeContext)
+
   return (
     <>
-      <GlobalStyles/>
-      <LightMode light = {light} setlight = {setlight}/>
+      <GlobalStyles light = {light}/>
       <Header/>
       <Main/>
-      
+      <LightMode/>
       
     </>
     

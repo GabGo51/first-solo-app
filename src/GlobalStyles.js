@@ -9,7 +9,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
   }
-
+  
   html, body, div,
   input, button, select, option,
   h1, h2, h3, h4, h5, h6, p,
@@ -65,19 +65,20 @@ export default createGlobalStyle`
 
   body {
     line-height: 1.25;
-    background:#151515 ;
+    background:${({light}) => light ? "#F4F4F4":'#1D1D1D'};
     
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    color: white;
+    color: ${({light}) => light ? "#1D1D1D":'#F4F4F4'};
     
   }
 
   
 
   a {
-    color: #69ffcf;
+    color:${({light}) => light ? "#247A6A":'#69ffcf'};
     text-decoration: none;
   }
 `;
+

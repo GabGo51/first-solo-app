@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import  styled  from "styled-components"
-
+import { useContext } from "react"
+import { ThemeContext } from "./Context"
 
 const Header = () =>{
+  const {light} = useContext(ThemeContext)
 
   const [scroll, setScroll] = useState(false)
 
@@ -43,11 +45,11 @@ const Header = () =>{
 return(
   <Container>
     <Title>GabGo.dev</Title>
-    <ButtonContainer>
-      <Button onClick={() => handleClick("Home")}>Home</Button>
-      <Button onClick={() => handleClick("About")}>About</Button>
-      <Button onClick={() => handleClick("Project")}>Project</Button>
-      <Button onClick={() => handleClick("Contact")}>Contact</Button>
+    <ButtonContainer >
+      <Button light={light} onClick={() => handleClick("Home")}>Home</Button>
+      <Button light={light} onClick={() => handleClick("About")}>About</Button>
+      <Button light={light} onClick={() => handleClick("Project")}>Project</Button>
+      <Button light={light} onClick={() => handleClick("Contact")}>Contact</Button>
     </ButtonContainer>
   
   </Container>
@@ -96,7 +98,7 @@ margin: 40px;
 
 const Button = styled.button`
 background-color: transparent;
-color: white;
+color: ${({light}) => light ? "#247A6A":'white'};
 font-weight: bold;
 font-size: 1.2em;
 border: none;

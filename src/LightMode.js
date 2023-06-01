@@ -1,12 +1,15 @@
 import { styled } from "styled-components";
 import { useState } from "react";
+import { useContext } from "react";
+import { ThemeContext } from "./Context";
 
-const LightMode = ({light, setlight}) => {
 
-  
+const LightMode = () => {
+
+  const {light, setLight} = useContext(ThemeContext)
 
   const handleClick = () =>{
-   setlight(!light)
+   setLight(!light)
    console.log(light);
   }
   return (
@@ -20,9 +23,9 @@ const LightMode = ({light, setlight}) => {
 
 const Container = styled.div`
 position: fixed;
-
 bottom: 20px;
 right: 20px;
+z-index: 2000;
 `
 
 const Button = styled.button`
@@ -31,10 +34,11 @@ width: 50px;
 height: 50px;
 border-radius: 50%;
 transition: 200ms;
-z-index: 20;
+background-color: ${({light}) => light ? "white":'black'};
+
 
 &:hover {
-  background-color: black;
+  background-color: grey;
 }
 `
 export default LightMode
