@@ -66,7 +66,6 @@ export default createGlobalStyle`
   body {
     line-height: 1.25;
     background:${({light}) => light ? "#F4F4F4":'#1D1D1D'};
-    
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;

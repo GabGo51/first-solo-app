@@ -33,22 +33,24 @@ return(
   <Container>
     <Title>Contact Me</Title>
     <InfoBox>
-      <TextBox>
+      <TextBox light = {light}>
         <h3>Get in touch</h3>
         <p><span>Email</span> : snow.gabo51@gmail.com</p>
         <p><span>Phone</span> : 450 712 7842</p>
         <p>Thanks for checking out my portfolio! If you're interested in collaborating on a project, I'd love to hear from you. Feel free to reach out through the contact information provided. Looking forward to the opportunity to work together!</p>
       </TextBox>
-      <FormBox light = {light}>
+      <FormBox light={light}>
         <form onSubmit={handleSubmit}>
           <div>
-            <Input 
+            <Input
+            light = {light} 
             name="name"
             onChange={handleChange} 
             placeholder="Name"
             value={formData.name}
             />
             <Input 
+            light = {light} 
             type="email"
             name="email"
             onChange={handleChange} 
@@ -58,12 +60,13 @@ return(
           </div>
           
           <Message 
+          light = {light} 
           name="message"
           placeholder="Message"
           onChange={handleChange}
           value={formData.message}
           />
-          <button type="submit">Send</button>
+          <button light = {light} type="submit">Send</button>
         </form>
       </FormBox>
     </InfoBox>
@@ -73,11 +76,10 @@ return(
 }
 
 const Container = styled.div`
-width: 1200px;
+max-width: 1200px;
 padding-bottom: 200px;
 display: flex;
 flex-direction: column;
-color: white;
 
 `
 const Title = styled.h2`
@@ -102,7 +104,8 @@ p{
 
 span{
   /* font-weight: bold; */
-  color: #69ffcf;
+  color:${({light}) => light ? "#247A6A":'#69ffcf'};
+  font-weight: 500;
 }
 `
 const FormBox = styled.div`
@@ -125,7 +128,7 @@ button{
   justify-content: center;
   width: 50px;
   border: 1px solid #B3B3B3;
-  background-color: black;
+  background-color: ${({light}) => light?"white":"black"} ;
   padding: 5px 40px;
   transition: 200ms;
   font-size: 1.1em;
@@ -133,8 +136,8 @@ button{
   color:${({light}) => light?"black":"white"}   ;
 
   &:hover{
-    background-color: #69ffcf;
-    color: black;
+    background-color: ${({light}) => light ? "#247A6A":'#69ffcf'};
+    color:  ${({light}) => light ? "white":'black'};
     border: 1px solid black;
   }
 }
@@ -144,13 +147,13 @@ const Input = styled.input`
 width: 290px;
 margin-right: 20px;
 border: 1px solid #B3B3B3;
-background-color: black;
+background-color: ${({light}) => light?"white":"#0F0F0F"} ;
 padding: 10px ;
 font-size: 1.1em;
 transition: 200ms;
-color: white;
+color: ${({light}) => light?"black":"white"};
 &:hover{
-    border: 1px solid white;
+    border:${({light}) => light?"1px solid black":"1px solid white"};
   }
 `
 
@@ -159,14 +162,14 @@ padding: 10px;
 padding-bottom: 150px;
 width: 600px;
 border: 1px solid #B3B3B3;
-background-color: black;
+background-color: ${({light}) => light?"white":"#0F0F0F"};
 font-size: 1.1em;
 transition: 200ms;
 vertical-align: top;
-color: white;
+color: ${({light}) => light?"black":"white"};
 margin: 5px 0px;
 &:hover{
-    border: 1px solid white;
+  border:${({light}) => light?"1px solid black":"1px solid white"};
   }
 
 `
