@@ -1,9 +1,5 @@
 import  styled  from "styled-components"
-import Icon from "react-icons-kit"
-import {htmlFive} from 'react-icons-kit/icomoon/htmlFive'
-import {css3} from 'react-icons-kit/icomoon/css3'
-import {git} from 'react-icons-kit/icomoon/git'
-import {code} from 'react-icons-kit/ikons/code'
+
 
 const TechStack = () =>{
 
@@ -19,6 +15,7 @@ const TechStack = () =>{
       <i class="fa-brands fa-react" ></i>
       <i class="fa-brands fa-git-alt" ></i>
       <i class="fa-brands fa-node-js"></i>
+      <i class="fa-brands fa-envira"></i>
       
       
     </IconContainer>
