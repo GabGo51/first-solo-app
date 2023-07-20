@@ -39,7 +39,7 @@ return(
         <p><span>Phone</span> : 450 712 7842</p>
         <p>Thanks for checking out my portfolio! If you're interested in collaborating on a project, I'd love to hear from you. Feel free to reach out through the contact information provided. Looking forward to the opportunity to work together!</p>
       </TextBox>
-      <FormBox light={light}>
+      {/* <FormBox light={light}>
         <form onSubmit={handleSubmit}>
           <div>
             <Input
@@ -68,7 +68,7 @@ return(
           />
           <button light = {light} type="submit">Send</button>
         </form>
-      </FormBox>
+      </FormBox> */}
     </InfoBox>
 
   </Container>
