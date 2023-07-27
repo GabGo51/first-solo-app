@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import Fruit from "./Images/Fruit.PNG";
+import Fruit from "./Images/gadgetgo.png";
 const ProjectBox2 = () => {
   return (
     <Container>
       <Image src={Fruit} />
       <TextBox>
-        <Title>Fruit Store</Title>
-        <Text>Creation of a Fruit Store Website using React. Learning how to pass down props and making usage of a database to create reusable components. Styling the items depending on their status and availability.</Text>
+        <Title>E-Commerce Store</Title>
+        <Text>First experience working with a team! Me and 4 other devs created a full-stack E-commerce store. Browsing objects, adding them to the cart and "buying" them like an actual online store. </Text>
       </TextBox>
     </Container>
   );
@@ -14,18 +14,19 @@ const ProjectBox2 = () => {
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-left: -60px;
   margin-bottom: 200px;
 `;
 const Image = styled.img`
-  border-radius: 30px;
+  border-radius: 10px;
   width: 500px;
   margin-left: 100px;
   margin-right: 150px;
   filter: brightness(95%);
   transition: 200ms;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+  z-index: 30;
   &:hover{
     filter: brightness(105%);
     scale: 1.05;

@@ -34,8 +34,8 @@ return(
     <Title>Contact Me</Title>
     <InfoBox>
       <TextBox light = {light}>
-        <h3>Get in touch</h3>
-        <p><span>Email</span> : snow.gabo51@gmail.com</p>
+        
+        <p><span>Email</span> : gosselin.gab51@gmail.com</p>
         <p><span>Phone</span> : 450 712 7842</p>
         <p>Thanks for checking out my portfolio! If you're interested in collaborating on a project, I'd love to hear from you. Feel free to reach out through the contact information provided. Looking forward to the opportunity to work together!</p>
       </TextBox>

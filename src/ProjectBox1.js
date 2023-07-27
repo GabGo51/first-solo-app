@@ -1,17 +1,13 @@
 import styled from "styled-components";
-import Luigi from "./Images/luigi.PNG";
+import Luigi from "./Images/bloom.PNG";
 
 const ProjectBox1 = () => {
   return (
     <Container>
       <TextBox>
-        <Title>Luigi's Mansion</Title>
+        <Title>BLOOM Plant-Care</Title>
         <Text>
-          A simple JavaScript flash Game inspired by Luigi's Mansion, a favorite
-          game of mine. Implemeneted hitboxes, gave the player some health and
-          made the game harder by adding enemies as time would go by. Added some
-          sound effects and a background soundtrack. Played around with gifs and
-          simple css animations.
+          My Bootcamp final project and my first full-stack solo project. A simple web application tracking the watering of the plants you log in your garden. Uses React JS Node MongoDb and express. 
         </Text>
       </TextBox>
       <Image src={Luigi} />
@@ -28,8 +24,8 @@ const Container = styled.div`
 const Image = styled.img`
   width: 400px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
-  border-radius: 30px;
+  z-index: 30;
+  border-radius: 10px;
   /* margin-top: -100px; */
   margin-right: -30px;
   filter: brightness(85%);
@@ -43,7 +39,7 @@ const Image = styled.img`
 `;
 const TextBox = styled.div`
   width: 400px;
-  margin-right: 250px;
+  margin-right: 50px;
 `;
 const Title = styled.h3`
   font-size: 1.5em;

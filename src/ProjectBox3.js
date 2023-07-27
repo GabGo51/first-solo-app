@@ -1,5 +1,5 @@
 import styled  from "styled-components"
-import Cookie from "./Images/Cookie.PNG"
+import Cookie from "./Images/twitter.PNG"
 
 const ProjectBox3 = () =>{
  return(
@@ -7,9 +7,9 @@ const ProjectBox3 = () =>{
   <Container>
     
     <TextBox>
-        <Title>Coockie Clicker</Title>
+        <Title>Twitter Clone</Title>
         <Text>
-          A React idle Game that made use of Hooks to update the states and effects of the game components. Also made use of keyboard event listener so the player could use space bar to generate cookies.
+          Recreated a clone of the social media twitter (now X ahaha). Able to post/like tweets, see profiles and vew individual tweets. This projects Was mainly front-end oriented. 
         </Text>
     </TextBox>
 
@@ -30,7 +30,7 @@ border-radius: 30px;
 filter: brightness(95%);
   transition: 200ms;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+  z-index: 30;
   &:hover{
     filter: brightness(105%);
     scale: 1.05;
